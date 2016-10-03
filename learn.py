@@ -6,13 +6,13 @@ import numpy as np # numpy lib
 import seaborn as sns # seaborn module
 import matplotlib.pyplot as plt # generate the graph
 
-data = pd.read_csv('Tvradio.csv') # panda will read the csv file
+data = pd.read_csv('demo.csv') # panda will read the csv file
 data.index = np.arange(1,len(data)+1) # set the index as 1, if column 1 of data set is index then set index_col = 0 
 
-feature_cols = ['TV','Radio','Speaker'] # Create a list which contains all the required X axis values
+feature_cols = ['Sales','ABS','Customers'] # Create a list which contains all the required X axis values
  
 X = data[feature_cols]
-y = data.Sales # Y axis only contains one value and it is an int that's why direct data.sales
+y = data.ATV # Y axis only contains one value and it is an int that's why direct data.sales
 
 
 
