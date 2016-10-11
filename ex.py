@@ -1,14 +1,18 @@
-import numpy as np
+# P1 for regression
 import warnings
 warnings.filterwarnings("ignore")
 import pandas as pd
-import matplotlib.pyplot as plt
+import numpy as np
 import seaborn as sns
+import matplotlib.pyplot as plt
 
-ages = np.random.gamma(6,3, size=50)
-data = pd.read_csv('demo.csv')
 
-sns.pairplot(data=data,
-                  x_vars=['ABS'],
-                  y_vars=['Sales', 'ABV'])
-plt.savefig("chess.png", bbox_inches="tight")  
+data = pd.read_csv('demo.csv',index_col=0)
+
+sns.pairplot(data=data,y_vars=['ABS'],x_vars=['Sales','ATV','Customers'],kind='reg')
+plt.xlim(50,)
+plt.ylim(1,)
+plt.show()
+plt.savefig("asd.png", bbox_inches="tight")
+
+
