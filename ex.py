@@ -11,4 +11,6 @@ data = pd.read_csv('demo.csv')
 sns.pairplot(data=data,
                   x_vars=['ABS'],
                   y_vars=['Sales', 'ABV'])
-plt.savefig("chess.png", bbox_inches="tight")  
+plt.savefig("chess.png", bbox_inches="tight")
+# test
+ 
