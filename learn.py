@@ -57,6 +57,4 @@ print np.sqrt(metrics.mean_squared_error(y_test,y_pred)) # RMSE value for the te
 
 
 
-                      ####################################
-                     ##"With Love From Harsh to Tushar"##
-                    ####################################
+      
